@@ -524,7 +524,7 @@ header .flex.items-center.gap-4{
             if (!text.trim()) return;
             const phone = whatsappNumber.replace(/[^0-9]/g, '');
             const orderCode = generateOrderCode();
-            const message = encodeURIComponent(`*كود الطلب:* ${orderCode}\n*الرسالة:* ${text}\n\n——\nمن تطبيق دلفري الرستن`);
+            const message = encodeURIComponent(`*كود الطلب:* ${orderCode}\n*الرسالة:* ${text}\n\n——\nمن تطبيق دلفري الرستن\nالإدارة: المدير محمد أبو أيهم`);
             const url = `https://wa.me/${phone}?text=${message}`;
             window.open(url, '_blank');
             // Show user message in chat with code badge
